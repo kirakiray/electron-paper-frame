@@ -1,0 +1,52 @@
+body {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.paper_frame {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: #fff solid 1px;
+}
+
+.paper_frame_top {
+    display: flex;
+    height: 30px;
+}
+
+.paper_frame_control > div {
+    font-size: 12px;
+    line-height: 30px;
+    width: 40px;
+    height: 30px;
+    color: #6b6b6a;
+    text-align: center;
+    float: right;
+    transition: all ease .2s;
+}
+
+.paper_frame_control > div:hover {
+    background-color: #e8e8e8;
+}
+
+.paper_frame_control>.paper_frame_close:hover {
+    background-color: #dc4320;
+    color: white;
+}
+
+.paper_frame_top_container,
+.paper_frame_container {
+    flex: 1;
+}
+
+.app_region_drag {
+    -webkit-app-region: drag;
+}
